@@ -14,7 +14,6 @@ import {
 export function Header() {
   return (
     <header className="sticky top-0 flex justify-between text-white">
-      {/* <h1 className="text-3xl font-bold p-2 pl-20">Lagoela</h1> */}
       <div className="font-inter flex gap-24 m-1 pl-[6%] p-2 items-center">
         <a className="" href="/">
           home
