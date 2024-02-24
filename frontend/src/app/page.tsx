@@ -35,7 +35,12 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className=""></div>
+          <Image
+            src="/coding-guy.png"
+            alt="Coding Guy"
+            width={400}
+            height={400}
+          />
       </main>
     </div>
   );
