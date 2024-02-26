@@ -6,6 +6,7 @@ interface Post {
   title: string;
   publishedDate: string;
   shortContent: string;
+  slug: string;
 }
 
 export default function Blog() {
@@ -14,11 +15,13 @@ export default function Blog() {
       title: "First Post",
       publishedDate: "January 1, 2024",
       shortContent: "This is the first post on this blog",
+      slug: "first-post",
     },
     {
       title: "Second Post",
       publishedDate: "January 5, 2024",
       shortContent: "This is the second post on this blog",
+      slug: "second-post",
     },
   ]
 
@@ -34,7 +37,7 @@ export default function Blog() {
         <ul>
             {Posts.reverse().map((post, index) => (
             <li key={index}>
-              <Post title={post.title} publishedDate={post.publishedDate} shortContent={post.shortContent} />
+              <Post title={post.title} publishedDate={post.publishedDate} shortContent={post.shortContent} slug={post.slug}/>
             </li>
           ))}
         </ul>
