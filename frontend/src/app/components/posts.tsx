@@ -1,4 +1,3 @@
-// create a post component for a blog
 export interface PostProps {
   title: string;
   publishedDate: string;
