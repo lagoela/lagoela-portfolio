@@ -12,12 +12,12 @@ export default function Blog() {
   const Posts: Post[] = [
     {
       title: "First Post",
-      publishedDate: "2022-01-01",
+      publishedDate: "January 1, 2024",
       shortContent: "This is the first post on this blog",
     },
     {
       title: "Second Post",
-      publishedDate: "2022-01-02",
+      publishedDate: "January 5, 2024",
       shortContent: "This is the second post on this blog",
     },
   ]
@@ -32,7 +32,7 @@ export default function Blog() {
         </div>
         <hr />
         <ul>
-          {Posts.map((post, index) => (
+            {Posts.reverse().map((post, index) => (
             <li key={index}>
               <Post title={post.title} publishedDate={post.publishedDate} shortContent={post.shortContent} />
             </li>
