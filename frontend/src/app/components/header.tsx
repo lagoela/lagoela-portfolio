@@ -13,7 +13,7 @@ import {
 
 export function Header() {
   return (
-    <header className="sticky top-0 flex justify-between text-white">
+    <header className="sticky top-0 flex pt-1 justify-between text-white">
       <div className="font-inter flex gap-24 m-1 pl-[6%] p-2 items-center">
         <a className="" href="/">
           home
@@ -33,6 +33,7 @@ export function Header() {
               <DialogTitle>Contact</DialogTitle>
               <DialogClose />
             </DialogHeader>
+            
             <div className="flex flex-col gap-4 p-4">
             </div>
             </DialogContent>

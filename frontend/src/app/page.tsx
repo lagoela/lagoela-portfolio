@@ -3,7 +3,7 @@ import { Header } from "./components/header";
 
 export default function Home() {
   return (
-    <div className="flex flex-col h-screen m-0 p-0 bg-zinc-900">
+    <div className="flex flex-col h-screen m-0 p-0">
       <Header />
       <main className="h-screen flex flex-col">
         <div className="flex flex-row h-[100%]">
@@ -34,13 +34,10 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <div className="flex items-center ml-0 pl-0">
+            <img src="/coding-men.png" alt="" className="w-[600px] h-[430px]"/>
+          </div>
         </div>
-          <Image
-            src="/coding-guy.png"
-            alt="Coding Guy"
-            width={400}
-            height={400}
-          />
       </main>
     </div>
   );
